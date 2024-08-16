@@ -42,7 +42,7 @@
             Nodo actual = new Nodo();
             actual = nodoInicial;
             bool encontrado = false;
-            Console.WriteLine("ingrese del nodo a buscar: ");
+            Console.WriteLine("ingrese el dato del nodo a buscar: ");
             int nodobuscado = int.Parse(Console.ReadLine());
             if (actual != null)
             {
