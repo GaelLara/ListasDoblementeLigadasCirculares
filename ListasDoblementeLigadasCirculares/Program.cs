@@ -2,6 +2,8 @@
 {
     class Program
     {
+
+
         static void Main(string[] args)
         {
             Lista lista = new Lista();
@@ -11,21 +13,26 @@
             lista.InsertarNodo();
             lista.InsertarNodo();
 
-            Console.WriteLine("lista normal");
+            Console.WriteLine("LISTA NORMAL");
             lista.RecorrerListaPU();
-            Console.WriteLine("lista inversa");
-            lista.RecorrerListaUP();
-            lista.BuscarNodo();
+            Console.WriteLine("INGRESA EL DATO DEL NODO QUE QUIERAS MODIFICAR:");
             lista.ModificarNodo();
-            Console.WriteLine("lista normal");
+            Console.WriteLine("LISTA NORMAL");
             lista.RecorrerListaPU();
-            Console.WriteLine("lista inversa");
-            lista.RecorrerListaUP();
-            lista.EliminarNodo();
-            Console.WriteLine("lista normal");
+            Console.WriteLine("INGRESA EL DATO DEL NODO QUE QUIERAS MODIFICAR:");
+            lista.ModificarNodo();
+            Console.WriteLine("LISTA NORMAL");
             lista.RecorrerListaPU();
-            Console.WriteLine("lista inversa");
-            lista.RecorrerListaUP();
+            Console.WriteLine("INGRESA EL DATO DEL NODO QUE QUIERAS MODIFICAR:");
+            lista.ModificarNodo();
+            Console.WriteLine("LISTA NORMAL");
+            lista.RecorrerListaPU();
+            Console.WriteLine("INGRESA EL DATO DEL NODO QUE QUIERAS MODIFICAR:");
+            lista.ModificarNodo();
+            Console.WriteLine("LISTA NORMAL");
+            lista.RecorrerListaPU();
+
+
 
 
         }

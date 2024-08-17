@@ -32,7 +32,7 @@
                 nodoFinal = nuevoNodo;
                 nodoInicial.anterior = nodoFinal;
             }
-            Console.WriteLine("Nuevo nodo agregdo con exito");
+            Console.WriteLine( "***** NUEVO NODO AGREGADO CON EXITO *****");
 
         }
 
@@ -50,7 +50,7 @@
                 {
                     if (actual.dato == nodobuscado)
                     {
-                        Console.WriteLine("nodo con el dato " + actual.dato + " Encontrado");
+                        Console.WriteLine("Nodo con el dato " + actual.dato + " Encontrado");
                         encontrado = true;
                     }
                     actual = actual.siguiente;
@@ -71,7 +71,7 @@
             Nodo actual = new Nodo();
             actual = nodoInicial;
             bool encontrado = false;
-            Console.WriteLine("ingrese del nodo a modificar: ");
+            
             int nodobuscado = int.Parse(Console.ReadLine());
             if (actual != null)
             {
@@ -79,10 +79,10 @@
                 {
                     if (actual.dato == nodobuscado)
                     {
-                        Console.WriteLine("nodo con el dato " + actual.dato + " Encontrado");
+                        Console.WriteLine("***** NODO CON EL DATO " + actual.dato + " ENCONTRADO *****");
                         Console.WriteLine("Ingrese el nuevo dato para este nodo: ");
                         actual.dato = int.Parse(Console.ReadLine());
-                        Console.WriteLine("nodo modificado con exito");
+                        Console.WriteLine("***** NUEVO NODO MODIFICADO CON EXITO *****");
                         encontrado = true;
                     }
                     actual = actual.siguiente;
