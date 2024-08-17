@@ -1,16 +1,16 @@
 ﻿namespace ListasDoblementeLigadasCriculares
 {
     internal class Lista
-    {
+    {        
         Nodo nodoInicial = new Nodo();
         Nodo nodoFinal = new Nodo();
-
+        //CONSTRUCTOR INICIALMENTE AMBOS NODOS VALEN "NULL"
         public Lista()
-        {
+        { 
             nodoInicial = null;
             nodoFinal = null;
         }
-
+        //METODO PARA INSERTAR NODO
         public void InsertarNodo()
         {
             Nodo nuevoNodo = new Nodo();
@@ -36,7 +36,7 @@
 
         }
 
-
+        //METODO PARA BUSCAR NODO
         public void BuscarNodo()
         {
             Nodo actual = new Nodo();
@@ -66,6 +66,7 @@
                 Console.WriteLine("La lista esta vacia");
             }
         }
+        //METODO PARA MODIFICAR NODO
         public void ModificarNodo()
         {
             Nodo actual = new Nodo();
@@ -98,7 +99,7 @@
                 Console.WriteLine("La lista esta vacia");
             }
         }
-
+        //METODO PARA ELIMINAR NODO
         public void EliminarNodo()
         {
             Nodo actual = new Nodo();
@@ -106,7 +107,7 @@
             Nodo anterior = new Nodo();
             anterior = null;
             bool encontrado = false;
-            Console.WriteLine("ingrese del nodo a eliminar: ");
+            Console.WriteLine("ingrese el dato del nodo a eliminar: ");
             int nodobuscado = int.Parse(Console.ReadLine());
             if (actual != null)
             {
@@ -149,7 +150,7 @@
                 Console.WriteLine("La lista esta vacia");
             }
         }
-
+        //METODO PARA RECOORER LISTA DEL PRIMERO AL ULTIMO
         public void RecorrerListaPU()
         {
             Nodo actual = new Nodo();
@@ -167,7 +168,7 @@
                 Console.WriteLine("La lista esta vacia");
             }
         }
-
+        //METODO PARA RECORRER LISTA DEL ULTIMO AL PRIMERO
         public void RecorrerListaUP()
         {
             Nodo actual = new Nodo();
